@@ -1,0 +1,146 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: functionality
+  examples: |
+    -what can you do ?
+    -what are your functions ?
+
+
+
+- intent: search_by_barcode
+  examples: |
+    - search by barcode [123456789](barcode)
+    - check barcode [3029330003533](barcode)
+    - show product with barcode [7622210449283](barcode)
+    - I have this barcode [5410188000029](barcode)
+    - can you check product [1234567](barcode)
+
+
+- intent: provide_grade
+  examples: |
+    - grade [b](grade)
+    - [a](grade)
+    - [c](grade)
+
+
+- intent: provide_category
+  examples: |
+    - [snacks](category)
+    - [juice](category)
+    - [bread](category)
+    - [chips](category)
+    - just [fruits](category)
+    - food like [chocolate](category)
+    - [snacks](category) please
+    - show me [yogurt](category)
+    - give me some [chocolate](category)
+
+
+- intent: ask_for_products
+  examples: |
+    - show me some products
+    - I want to find food
+    - suggest products
+    - find food items
+
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: thank_you
+  examples: |
+    -thank you
+    -understood
+    -thx
+    -makes sense 
+    
+

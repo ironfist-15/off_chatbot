@@ -1,0 +1,93 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - functionality
+  - ask_for_products
+  - provide_category
+  - provide_grade
+  - search_by_barcode
+  - thank_you
+
+
+entities:
+  - category
+  - grade
+  - barcode
+
+slots:
+  category:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: category
+
+  grade:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: grade
+
+  barcode:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: barcode
+
+
+
+actions:
+  - action_search_by_category
+  - action_search_by_category_and_grade
+  - action_search_by_barcode
+
+
+responses:
+  utter_greet:
+  - text: "Hi! I am the OFF bot.What do you want to do? "
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_functionality :
+  - text: "I can currently fetch product data based on the barcode .I can also fetch products based on their categories and grade . "
+
+  utter_iamabot:
+  - text: "I am a bot, intended to help you with interact with OpenFoodFacts."
+
+  utter_ask_category:
+  - text: "What category of food products are you looking for?"
+
+  utter_ask_grade:
+  - text: "Do you have a specific nutrition grade in mind?"
+
+  utter_no_results:
+  - text: "Sorry, couldn't fetch any data. Please try again with different details."
+
+  utter_thank_you :
+  - text: "Your welcome anything else I can do for you ?"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
