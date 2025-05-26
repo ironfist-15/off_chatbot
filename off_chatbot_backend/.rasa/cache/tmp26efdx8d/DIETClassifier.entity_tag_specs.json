@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-barcode",
+      "2": "I-barcode",
+      "3": "L-barcode",
+      "4": "U-barcode",
+      "5": "B-category",
+      "6": "I-category",
+      "7": "L-category",
+      "8": "U-category",
+      "9": "B-grade",
+      "10": "I-grade",
+      "11": "L-grade",
+      "12": "U-grade",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-barcode": 1,
+      "I-barcode": 2,
+      "L-barcode": 3,
+      "U-barcode": 4,
+      "B-category": 5,
+      "I-category": 6,
+      "L-category": 7,
+      "U-category": 8,
+      "B-grade": 9,
+      "I-grade": 10,
+      "L-grade": 11,
+      "U-grade": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

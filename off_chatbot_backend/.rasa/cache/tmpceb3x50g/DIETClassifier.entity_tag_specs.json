@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-barcode",
+      "2": "I-barcode",
+      "3": "L-barcode",
+      "4": "U-barcode",
+      "5": "B-grade",
+      "6": "I-grade",
+      "7": "L-grade",
+      "8": "U-grade",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-barcode": 1,
+      "I-barcode": 2,
+      "L-barcode": 3,
+      "U-barcode": 4,
+      "B-grade": 5,
+      "I-grade": 6,
+      "L-grade": 7,
+      "U-grade": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
