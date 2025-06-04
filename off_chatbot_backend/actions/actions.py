@@ -26,7 +26,6 @@ class ActionSearchByCategory(Action):
                 dispatcher.utter_message(text="Top products:\n- " + "\n- ".join(names))
             else:
                 dispatcher.utter_message(text="No products found for that category.")
-            print("Category received:", category)
 
         except Exception as e:
             dispatcher.utter_message(text=f"Error fetching products: {str(e)}")
